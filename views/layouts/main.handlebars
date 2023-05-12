@@ -16,7 +16,7 @@
     <header>
       <nav class="navbar">
         <a href="/">
-          <img src="/img/thoughts_logo.png" alt="brand" class="brand-image"/>
+          <img src="/img/thoughts_logo.png" alt="brand" class="brand-image" />
         </a>
 
         <ul>
@@ -30,6 +30,13 @@
     </header>
 
     {{! flash messages }}
+    <div class="flash-message-container">
+      {{#if messages.message}}
+        <div class="flash-message">
+          {{messages.message}}
+        </div>
+      {{/if}}
+    </div>
 
     <div class="container">
       {{{body}}}

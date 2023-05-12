@@ -68,6 +68,25 @@ header {
   font-size: 0.8rem;
 }
 
+/* flash message style */
+
+.flash-message-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.flash-message {
+  max-width: 100%;
+  padding: 0.5em;
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.5em;
+  border: 2px solid red;
+  background-color: transparent;
+}
+
 /* register form style */
 
 .auth-container {
