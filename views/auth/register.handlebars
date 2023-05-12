@@ -1,1 +1,30 @@
-<h1>Register</h1>
+<div class="auth-container">
+
+  <div class="form-container">
+    <div class="title-area">
+        <div class="border-title"></div>
+      <h1 id="register-title">Registrar</h1>
+    </div>
+
+    <form action="/register" method="POST">
+      <div class="input-area">
+        <label for="name">Nome</label>
+        <input type="text" name="name" required />
+      </div>
+      <div class="input-area">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" required />
+      </div>
+      <div class="input-area">
+        <label for="password">Senha</label>
+        <input type="password" name="password" required />
+      </div>
+      <div class="input-area">
+        <label for="cfPassword">Confirme sua senha</label>
+        <input type="password" name="cfPassword" required />
+      </div>
+      <input type="submit" value="Cadastrar" />
+      <span>Já tem uma conta? <a href="/login">Entrar</a></span>
+    </form>
+  </div>
+</div>

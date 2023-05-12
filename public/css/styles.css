@@ -63,20 +63,110 @@ header {
 /* main style */
 
 .container {
-    min-height: 100vh;
-    padding: 1em;
-    font-size: 0.8rem;
+  min-height: 100vh;
+  padding: 1em;
+  font-size: 0.8rem;
+}
+
+/* register form style */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-top: 2em;
+}
+
+form > .input-area {
+  display: flex;
+  flex-direction: column;
+}
+
+form > .input-area label {
+  margin-bottom: 0.2em;
+  font-size: 1rem;
+  color: #fff;
+}
+
+form > .input-area input {
+  width: 25vw;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  outline: none;
+  border: none;
+  border-radius: 0.2em;
+}
+
+form > input[type="submit"] {
+  cursor: pointer;
+  width: 25vw;
+  padding: 0.6em;
+  margin-top: 1em;
+  outline: none;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1rem;
+  color: #fff;
+  background-color: goldenrod;
+}
+
+form > input[type="submit"]:hover {
+  transition: 0.1s;
+  background-color: rgb(177, 134, 27);
+}
+
+form > span {
+  margin-top: 1em;
+  color: #fff;
+}
+
+form > span a {
+  text-decoration: none;
+  color: gold;
+}
+
+form > span a:hover {
+  transition: 0.1s;
+  opacity: 70%;
+}
+
+#register-title {
+  margin-left: 0.5em;
+  color: #fff;
+}
+
+.title-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.border-title {
+  width: 0.4em;
+  height: 3em;
+  background-color: gold;
 }
 
 #home-title {
-    color: #fff;
+  color: #fff;
 }
 
 /* footer style */
 
 footer {
   margin-top: 1em;
-  padding: 0.5em 0;
+  padding: 1em 0;
   text-align: center;
   box-shadow: 0px 0px 5px #000;
 }
