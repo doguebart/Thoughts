@@ -23,8 +23,13 @@
           <li><a href="/" id="thoughts-a">Pensamentos</a></li>
 
           {{! after auth }}
-          <li><a href="/login">Entrar</a></li>
-          <li><a href="/register">Registrar</a></li>
+          {{#if session.userid}}
+            <li><a href="/thoughts/dashboard">Criar pensamento</a></li>
+            <li><a href="/logout">Sair</a></li>
+          {{else}}
+            <li><a href="/login">Entrar</a></li>
+            <li><a href="/register">Registrar</a></li>
+          {{/if}}
         </ul>
       </nav>
     </header>
