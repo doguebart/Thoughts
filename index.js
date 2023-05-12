@@ -6,8 +6,15 @@ const flash = require("express-flash");
 
 const conn = require("./db/conn");
 
+// Models import
 const User = require("./models/User");
 const Thought = require("./models/Thought");
+
+// Controller import
+const ThoughtsController = require("./controller/ThoughsController");
+
+// Routes import
+const thoughtsRoutes = require("./routes/thoughtsRoutes");
 
 const app = express();
 
@@ -52,6 +59,11 @@ app.use((req, res, next) => {
 
   next();
 });
+
+// Routes
+app.use("/thoughts", thoughtsRoutes);
+
+app.get("/", ThoughtsController.showThoughts);
 
 conn
   .sync()
