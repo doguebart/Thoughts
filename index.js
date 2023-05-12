@@ -15,6 +15,7 @@ const ThoughtsController = require("./controller/ThoughsController");
 
 // Routes import
 const thoughtsRoutes = require("./routes/thoughtsRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
@@ -62,6 +63,7 @@ app.use((req, res, next) => {
 
 // Routes
 app.use("/thoughts", thoughtsRoutes);
+app.use("/", authRoutes);
 
 app.get("/", ThoughtsController.showThoughts);
 

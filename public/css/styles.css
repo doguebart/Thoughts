@@ -57,13 +57,19 @@ header {
 
 #thoughts-a:hover {
   transition: 0.1s;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 /* main style */
 
 .container {
     min-height: 100vh;
+    padding: 1em;
+    font-size: 0.8rem;
+}
+
+#home-title {
+    color: #fff;
 }
 
 /* footer style */
