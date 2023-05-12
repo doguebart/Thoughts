@@ -6,4 +6,9 @@ module.exports = class ThoughtsController {
     
     res.render("thoughts/home");
   }
+
+  static async dashboard(req, res) {
+    
+    res.render("thoughts/dashboard");
+  }
 };
