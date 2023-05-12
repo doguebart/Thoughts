@@ -6,6 +6,9 @@ const flash = require("express-flash");
 
 const conn = require("./db/conn");
 
+const User = require("./models/User");
+const Thought = require("./models/Thought");
+
 const app = express();
 
 app.use(
@@ -52,6 +55,7 @@ app.use((req, res, next) => {
 
 conn
   .sync()
+  // .sync({ force: true })
   .then(() => {
     app.listen(3000);
   })
