@@ -51,15 +51,6 @@ header {
   color: gold;
 }
 
-#thoughts-a {
-  color: gold;
-}
-
-#thoughts-a:hover {
-  transition: 0.1s;
-  opacity: 70%;
-}
-
 /* main style */
 
 .container {
@@ -197,8 +188,21 @@ form > span a:hover {
   margin-bottom: 1em;
 }
 
-.content > h2 {
-  margin-top: 3em;
+.content .text-border {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.content .text-border .border {
+  width: 0.4em;
+  height: 3em;
+  background-color: gold;
+}
+
+.content .text-border > h2 {
+  color: goldenrod;
+  margin: 5em 0.5em;
 }
 
 .content .title-container .criar-pensamento-btn {
@@ -208,6 +212,11 @@ form > span a:hover {
   color: #fff;
   border-radius: 0.5em;
   background-color: goldenrod;
+}
+
+.content .title-container .criar-pensamento-btn:hover {
+  transition: 0.1s;
+  background-color: rgb(177, 134, 27);
 }
 
 /* footer style */
