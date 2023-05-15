@@ -60,7 +60,7 @@ npm install
   
   ![image](https://github.com/doguebart/Thoughts/assets/95982653/423e555a-6e04-43aa-b108-023954c696ce)
   
-  <li>Mude o nome do schema para "thoughts" e clique em aply.</li>
+  <li>Mude o nome do schema para "thoughts" e clique em apply.</li>
   
   ![image](https://github.com/doguebart/Thoughts/assets/95982653/26b201d8-05ca-4ab2-b9da-eb2594469f94)
 </ul>
