@@ -12,7 +12,10 @@
       <li>
         <span>{{this.title}}</span>
         <div class="actions">
-          <a href="/"><i class="bi bi-pencil-square" id="edit"></i></a>
+          <a href="/thoughts/edit/{{this.id}}"><i
+              class="bi bi-pencil-square"
+              id="edit"
+            ></i></a>
 
           <form action="/thoughts/remove" method="POST">
             <input type="hidden" name="id" value="{{this.id}}" />

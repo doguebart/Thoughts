@@ -1,0 +1,18 @@
+<div class="auth-container">
+
+  <div class="form-container">
+    <div class="title-area">
+      <div class="border-title"></div>
+      <h1 id="register-title">Editar pensamento</h1>
+    </div>
+
+    <form action="/thoughts/edit" method="POST">
+      <input type="hidden" name="id" value="{{thought.id}}" />
+      <div class="input-area">
+        <label for="title">Pensamento</label>
+        <input type="text" name="title" value="{{thought.title}}" />
+      </div>
+      <input type="submit" value="Salvar" />
+    </form>
+  </div>
+</div>

@@ -69,4 +69,32 @@ module.exports = class ThoughtsController {
       console.log(error);
     }
   }
+
+  static async editThought(req, res) {
+    const id = req.params.id;
+
+    const thought = await Thought.findOne({ raw: true, where: { id: id } });
+
+    res.render("thoughts/edit", { thought });
+  }
+
+  static async editThoughtPost(req, res) {
+    const id = req.body.id;
+
+    const thought = {
+      title: req.body.title,
+    };
+
+    try {
+      await Thought.update(thought, { where: { id: id } });
+
+      req.flash("message", "Pensamento editado com sucesso!");
+
+      req.session.save(() => {
+        res.redirect("/thoughts/dashboard");
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
 };
