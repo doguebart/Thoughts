@@ -192,6 +192,7 @@ form > span a:hover {
   display: flex;
   align-items: center;
   margin-left: 1em;
+  margin-top: 10em;
 }
 
 .content .text-border .border {
@@ -202,7 +203,7 @@ form > span a:hover {
 
 .content .text-border > h2 {
   color: goldenrod;
-  margin: 5em 0.5em;
+  margin-left: 0.5em;
 }
 
 .content .title-container .criar-pensamento-btn {
@@ -217,6 +218,59 @@ form > span a:hover {
 .content .title-container .criar-pensamento-btn:hover {
   transition: 0.1s;
   background-color: rgb(177, 134, 27);
+}
+
+.content .thought-list {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5em 1em;
+}
+
+.content .thought-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border-bottom: 1px solid #202020;
+}
+
+.content .thought-list li .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .thought-list li .actions a {
+  margin-right: 1em;
+  font-size: 1rem;
+  color: gold;
+}
+
+.content .thought-list li .actions a:hover {
+  transition: 0.1s;
+  opacity: 70%;
+}
+
+li .actions form {
+  margin: 0 0 auto;
+}
+
+li .actions form button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: red;
+}
+
+li .actions form button:hover {
+  transition: 0.1s;
+  opacity: 70%;
 }
 
 /* footer style */

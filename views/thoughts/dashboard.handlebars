@@ -7,4 +7,21 @@
     <div class="border"></div>
     <h2>Seus pensamentos</h2>
   </div>
+  <ul class="thought-list">
+    {{#each thoughts}}
+      <li>
+        <span>{{this.title}}</span>
+        <div class="actions">
+          <a href="/"><i class="bi bi-pencil-square" id="edit"></i></a>
+
+          <form action="/">
+            <input type="hidden" name="id" value="{{this.id}}" />
+            <button type="submit" class="trash-icon-button">
+              <i class="bi bi-trash" id="delete"></i>
+            </button>
+          </form>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
 </div>
