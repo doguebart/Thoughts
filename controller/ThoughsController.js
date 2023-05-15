@@ -7,10 +7,10 @@ module.exports = class ThoughtsController {
   }
 
   static async dashboard(req, res) {
-    const userId = req.session.userid;
+    const UserId = req.session.userid;
 
     const user = await User.findOne({
-      where: { id: userId },
+      where: { id: UserId },
       include: Thought,
       plain: true,
     });
@@ -21,7 +21,11 @@ module.exports = class ThoughtsController {
 
     const thoughts = user.Thoughts.map((result) => result.dataValues);
 
-    console.log(thoughts);
+    let emptyThoughts = false;
+
+    if (thoughts.length === 0) {
+      emptyThoughts = true;
+    }
 
     res.render("thoughts/dashboard", { thoughts });
   }
@@ -40,6 +44,23 @@ module.exports = class ThoughtsController {
       await Thought.create(thought);
 
       req.flash("message", "Pensamento criado com sucesso!");
+
+      req.session.save(() => {
+        res.redirect("/thoughts/dashboard");
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  static async removeThought(req, res) {
+    const id = req.body.id;
+    const UserId = req.session.userid;
+
+    try {
+      await Thought.destroy({ where: { id: id, UserId: UserId } });
+
+      req.flash("message", "Pensamento removido com sucesso!");
 
       req.session.save(() => {
         res.redirect("/thoughts/dashboard");
