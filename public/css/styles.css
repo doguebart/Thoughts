@@ -402,3 +402,150 @@ footer > span {
   color: #fff;
   opacity: 70%;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar > ul li a {
+    font-weight: bold;
+  }
+
+  .home-header .search-form #input-search {
+    width: 90%;
+    padding: 1em;
+  }
+
+  .home-header .search-form #btn-search {
+    width: 90%;
+    padding: 1em;
+  }
+
+  .home-header .order-container span {
+    font-size: 1.2rem;
+  }
+
+  .home-header .order-container .order-actions form button {
+    font-size: 1.5rem;
+  }
+
+  .home-header .order-container .order-actions .eraser {
+    font-size: 1.5rem;
+  }
+
+  .thoughts-container figure blockquote {
+    font-size: 1.2rem;
+  }
+
+  /* login form */
+
+  .auth-container .form-container form .input-area label {
+    font-size: 1.2rem;
+  }
+
+  .auth-container .form-container form .input-area input {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .auth-container .form-container form input[type="submit"] {
+    width: 80vw;
+    padding: 0.7em;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .auth-container .form-container form span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* dashborad */
+
+  .content .text-border h2 {
+    font-size: 1.5rem;
+  }
+
+  .content .thought-list li span {
+    font-size: 1.2rem;
+  }
+
+  .content .thought-list li .actions #edit {
+    font-size: 1.2rem;
+  }
+
+  .content .thought-list li .actions form button i {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar > ul li a {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .home-header .search-form #input-search {
+    width: 80%;
+    padding: 1em;
+  }
+
+  .home-header .search-form #btn-search {
+    width: 80%;
+    padding: 1em;
+  }
+
+  .home-header .order-container span {
+    font-size: 1.2rem;
+  }
+
+  .home-header .order-container .order-actions form button {
+    font-size: 1.5rem;
+  }
+
+  .home-header .order-container .order-actions .eraser {
+    font-size: 1.5rem;
+  }
+
+  .thoughts-container figure blockquote {
+    font-size: 1.5rem;
+  }
+
+  /* login form */
+
+  .auth-container .form-container form .input-area label {
+    font-size: 1.2rem;
+  }
+
+  .auth-container .form-container form .input-area input {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .auth-container .form-container form input[type="submit"] {
+    width: 80vw;
+    padding: 0.7em;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .auth-container .form-container form span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  /* dashborad */
+
+  .content .text-border h2 {
+    font-size: 2rem;
+  }
+
+  .content .thought-list li span {
+    font-size: 1.5rem;
+  }
+
+  .content .thought-list li .actions #edit {
+    font-size: 1.5rem;
+  }
+
+  .content .thought-list li .actions form button i {
+    font-size: 1.5rem;
+  }
+}
