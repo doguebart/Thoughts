@@ -273,6 +273,120 @@ li .actions form button:hover {
   opacity: 70%;
 }
 
+.thoughts-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.thoughts-container figure {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #202020;
+}
+
+.thoughts-container figure blockquote {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.thoughts-container figure figcaption {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: goldenrod;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100%;
+}
+
+.home-header .search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.home-header .search-form input[type="text"] {
+  width: 25vw;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  outline: none;
+}
+
+.home-header .search-form > input[type="submit"] {
+  width: 25vw;
+  padding: 0.5em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.home-header .order-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.home-header .order-container > span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.home-header .order-container .order-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.home-header .order-container .order-actions form {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 0 auto;
+}
+
+.home-header .order-container .order-actions form > button {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: gold;
+  border: none;
+  margin: 0 1em 0 0;
+}
+
+.home-header .order-container .order-actions .eraser {
+  font-size: 1rem;
+  color: gold;
+}
+
+.home-header #home-title > span {
+  color: gold;
+}
+
+.home-header p {
+  text-align: center;
+  margin-top: 2em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.qty {
+  color: gold;
+}
+
 /* footer style */
 
 footer {
