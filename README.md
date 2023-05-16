@@ -56,11 +56,11 @@ npm install
 ### Como criar um banco de dados no MySql com o Workbench
 
 <ul>
-  <li>No Workbench, abra o seu sevidor local e crie um novo schema clicando no ícone ilustrado abaixo.</li>
+  <li>No Workbench, abra o seu sevidor local e crie um novo schema clicando no ícone ilustrado abaixo.</li> </br>
   
   ![image](https://github.com/doguebart/Thoughts/assets/95982653/423e555a-6e04-43aa-b108-023954c696ce)
   
-  <li>Mude o nome do schema para "thoughts" e clique em apply.</li>
+  <li>Mude o nome do schema para "thoughts" e clique em apply.</li> </br>
   
   ![image](https://github.com/doguebart/Thoughts/assets/95982653/26b201d8-05ca-4ab2-b9da-eb2594469f94)
 </ul>
